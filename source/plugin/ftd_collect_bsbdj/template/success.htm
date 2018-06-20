@@ -1,0 +1,46 @@
+<form name="cpform" method="post" autocomplete="off" action="?{$server_url}&selall=yes" id="cpform">
+<input type="hidden" name="formhash" id="formhash" value="{FORMHASH}" />
+<input type="hidden" name="page" value="{$page}" />
+<table class="tb tb2 nobdb">
+  <tbody>
+    <tr class="header">
+       <th>&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;</th>
+       <th>{lang ftd_collect_bsbdj:original_link}</th>
+       <th>{lang ftd_collect_bsbdj:forum_block}</th>
+       <th>{lang ftd_collect_bsbdj:theme_sort}</th>
+       <th>&nbsp;&nbsp;</th>
+    </tr>
+    
+    <!--{loop $postRs $ftd_post}-->
+    
+    <tr class="hover">
+    
+      <td><input type="checkbox" value="{$ftd_post['ID']}" name="idarray[]" /></td>	
+      <td><a href="{$_G['siteurl']}forum.php?mod=viewthread&tid={$ftd_post['tid']}" target="_blank">{lang ftd_collect_bsbdj:look_published_forum}</a></td>
+      <td><a href="{$ftd_post['from_url']}" target="_blank">{$ftd_post['subject']}</a></td>
+      <td><!--{eval echo getFidName($ftd_post['fid'])}--></td>
+      <td><!--{eval echo getTypeidName($ftd_post['thread_type_id'],$ftd_post['fid'])}--></td>
+      <td><a href="?{$server_url}&del={$ftd_post['ID']}&page={$page}&formhash={FORMHASH}">{lang ftd_collect_bsbdj:delete}</a></td>
+      
+    </tr>
+    
+    <!--{/loop}-->
+    
+    <tr>
+    	<td colspan="6">
+        	
+            <div style="margin:8px 0;">        
+            <input name="chkall" id="chkall" type="checkbox" class="checkbox" onclick="checkAll('prefix', this.form, 'idarray', 'chkall')" /><label for="chkall">{lang ftd_collect_bsbdj:all_check}</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="{lang ftd_collect_bsbdj:delete}" name="seldelete" class="btn" />            
+       		</div>
+            
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pg" style="margin-top:16px;"> <a href="?{$prePage}&formhash={FORMHASH}">{lang ftd_collect_bsbdj:previous_page}</a> &nbsp;&nbsp;{$page}&nbsp;&nbsp; <a href="?{$nextPage}&formhash={FORMHASH}">{lang ftd_collect_bsbdj:next_page}</a> </div>
+</form>
+<span id="newe"></span>

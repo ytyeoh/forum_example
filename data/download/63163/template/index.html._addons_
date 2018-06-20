@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>禁止遍历目录文件</title>
+</head>
+<body>
+您好！如果服务器设置了可以遍历目录文件，那么用户直接访问目录就可以遍历该目录下面的所有文件，如果有一个index.html文件，会自动索引到index.html文件,这样就可以禁止遍历目录文件，提高安全性！
+</body>
+</html>
+	

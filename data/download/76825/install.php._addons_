@@ -1,0 +1,49 @@
+<?php
+
+if (!defined('IN_DISCUZ') || !defined('IN_ADMINCP')) {
+
+    exit('Access Denied');
+}
+
+$sql = <<<EOF
+
+CREATE TABLE IF NOT EXISTS `pre_ftd_cai_ji_bsbdj` (
+
+   `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+   `content` TEXT DEFAULT NULL,
+   `from_url` varchar(255) DEFAULT NULL,     
+  `uidstr` VARCHAR(500) DEFAULT NULL,
+  `fid` INT(11) DEFAULT '0',
+  `thread_type_id` INT(11) DEFAULT '0',
+  `reply` TINYINT DEFAULT '0',
+  `subject` varchar(255) DEFAULT NULL,
+  `status` TINYINT DEFAULT '0',
+   `content_type` VARCHAR(10) DEFAULT NULL,
+   `tid` int(11) DEFAULT '-1',
+  PRIMARY KEY (`ID`),
+ UNIQUE KEY `from_url` (`from_url`)
+) ENGINE=MYISAM;
+
+EOF;
+
+runquery($sql);
+
+
+$sq2 = <<<EOF
+
+CREATE TABLE IF NOT EXISTS  `pre_ftd_cai_ji_uids`(
+	`uid_str` TEXT ,
+	 `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	  PRIMARY KEY (`ID`)
+)ENGINE=MYISAM;
+
+EOF;
+
+runquery($sq2);
+
+
+
+
+
+$finish = TRUE;
+

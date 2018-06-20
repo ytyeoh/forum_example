@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2017-08-17 15:13]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/discuz/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[采集百思不得姐]]></item>
+			<item id="identifier"><![CDATA[ftd_collect_bsbdj]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[ftd_collect_bsbdj/]]></item>
+			<item id="copyright"><![CDATA[ftd]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[cai_ji_text]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[采集中心]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[wait_send]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[待发布]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[success]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[已发布]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[帮助中心]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[4]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="input_uids"><![CDATA[请输入发帖用户的UID]]></item>
+				<item id="uid_format_error"><![CDATA[UID的格式不正确]]></item>
+				<item id="colloct_success"><![CDATA[采集成功]]></item>
+				<item id="colloct_failed"><![CDATA[采集失败]]></item>
+				<item id="delete_success"><![CDATA[删除成功]]></item>
+				<item id="select_left_need_delete"><![CDATA[请点击左边勾选需要删除的内容]]></item>
+				<item id="publish_success"><![CDATA[发布成功]]></item>
+				<item id="publish_failed"><![CDATA[发布失败]]></item>
+				<item id="select_left_need_publish"><![CDATA[请点击左边勾选需要发布内容]]></item>
+				<item id="importing"><![CDATA[正在执行批量导入,一共需要导入count条，正在导入第num条，请耐心等待一下……]]></item>
+				<item id="select_left"><![CDATA[请点击左边勾选内容]]></item>
+				<item id="restrict"><![CDATA[---------------------------- 购买正式版本去掉这句话 ----------------------------------]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="input_pages"><![CDATA[请输入页数]]></item>
+				<item id="tip"><![CDATA[提示：]]></item>
+				<item id="zero_represent_newst"><![CDATA[输入0代表最新的内容]]></item>
+				<item id="forum_block"><![CDATA[论坛版块]]></item>
+				<item id="theme_sort"><![CDATA[主题分类]]></item>
+				<item id="input_uids"><![CDATA[请输入发帖用户的UID]]></item>
+				<item id="uid_need_comma"><![CDATA[UID用英文逗号分隔，比如 1,2,3,4]]></item>
+				<item id="content_check"><![CDATA[采集内容选择]]></item>
+				<item id="text"><![CDATA[文本]]></item>
+				<item id="image"><![CDATA[图片]]></item>
+				<item id="random_collect"><![CDATA[随机采集]]></item>
+				<item id="yes"><![CDATA[是]]></item>
+				<item id="no"><![CDATA[否]]></item>
+				<item id="if_yes_input_invalid"><![CDATA[如果选择是，则输入的页数无效]]></item>
+				<item id="is_collect_reply"><![CDATA[是否采集回复]]></item>
+				<item id="start_collect"><![CDATA[开始采集]]></item>
+				<item id="collecting"><![CDATA[采集中，请稍等……]]></item>
+				<item id="qq_group"><![CDATA[售后QQ群:]]></item>
+				<item id="original_link"><![CDATA[原始链接]]></item>
+				<item id="look_published_forum"><![CDATA[查看已经发布的帖子]]></item>
+				<item id="delete"><![CDATA[删除]]></item>
+				<item id="all_check"><![CDATA[全选]]></item>
+				<item id="all_delete"><![CDATA[全部删除]]></item>
+				<item id="previous_page"><![CDATA[上一页]]></item>
+				<item id="next_page"><![CDATA[下一页]]></item>
+				<item id="original_forum"><![CDATA[原始帖子]]></item>
+				<item id="operate"><![CDATA[操作]]></item>
+				<item id="import"><![CDATA[导入]]></item>
+				<item id="importing"><![CDATA[导入中...]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

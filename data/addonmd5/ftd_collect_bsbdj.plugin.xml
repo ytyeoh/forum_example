@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ftd_collect_bsbdj.plugin]]></item>
+	<item id="RevisionID"><![CDATA[76825]]></item>
+	<item id="SN"><![CDATA[2018050100CxlglIBcHT]]></item>
+	<item id="RevisionDateline"><![CDATA[1510894801]]></item>
+	<item id="Data">
+		<item id="/help.inc.php"><![CDATA[dbb254a504ebfb85595ce33c8c03f6d5]]></item>
+		<item id="/cai_ji_text.inc.php"><![CDATA[2a40010c31ead4acfcf7c95ac716f0d8]]></item>
+		<item id="/discuz_plugin_ftd_collect_bsbdj_TC_BIG5.xml"><![CDATA[b2bbda00e96e773ab8218f8eea655925]]></item>
+		<item id="/discuz_plugin_ftd_collect_bsbdj_TC_UTF8.xml"><![CDATA[5e3179f1316ab2a6c077d7878111a967]]></item>
+		<item id="/common.fun.php"><![CDATA[55494d13907e3fc3b04945db3339c529]]></item>
+		<item id="/template/removebom.php"><![CDATA[3f0c0750a516ccfed2998326bb58b8d0]]></item>
+		<item id="/template/nopic.JPG"><![CDATA[80d75e88f030cc49c53f4bd18bd1d0a1]]></item>
+		<item id="/template/wait_send.htm"><![CDATA[c44253ddb229bbc35217e3568b46e3c6]]></item>
+		<item id="/template/success.htm"><![CDATA[a1cb436ce328b63d172b7f440cc180f4]]></item>
+		<item id="/template/help.htm"><![CDATA[1af02ed1c38a0eb95e7ceb7584a31faa]]></item>
+		<item id="/template/cai_ji_text.htm"><![CDATA[a63cb0c29a2aee26e37572af964d169b]]></item>
+		<item id="/install.php"><![CDATA[d3b8de2584b2794a64667eeb21ae1c45]]></item>
+		<item id="/uninstall.php"><![CDATA[097f37aa236c4e6a745e73f08cf17c3b]]></item>
+		<item id="/discuz_plugin_ftd_collect_bsbdj_SC_UTF8.xml"><![CDATA[237d41f7a8e6f1fa0a1a2d8b65cfbc9c]]></item>
+		<item id="/DiDom/Element.php"><![CDATA[10218554576210ed0b7c48dbb8f16ada]]></item>
+		<item id="/DiDom/Document.php"><![CDATA[34bb376b79b6e7914d3e42c0f7445db0]]></item>
+		<item id="/DiDom/Encoder.php"><![CDATA[1ecb656ca96846078a4bd6bb33712808]]></item>
+		<item id="/DiDom/Errors.php"><![CDATA[59d4a91b3ba1a7f21fff9f446f3bac33]]></item>
+		<item id="/DiDom/Query.php"><![CDATA[6a0d104135abd8e4108c6ed64d6f4066]]></item>
+		<item id="/DiDom/Exceptions/InvalidSelectorException.php"><![CDATA[72029e56669ac5449df7456b83820d39]]></item>
+		<item id="/success.inc.php"><![CDATA[69a913147f6bc77ce0a8dbd9bb138922]]></item>
+		<item id="/wait_send.inc.php"><![CDATA[80d2347fc2761d9e94e66b45eb92020d]]></item>
+		<item id="/discuz_plugin_ftd_collect_bsbdj_SC_GBK.xml"><![CDATA[e5f998b01ac95dc101e2b7bf7836ce64]]></item>
+	</item>
+</root>

@@ -1,0 +1,32 @@
+<!--{if strlen($csdn123_arr["upgrade"])>10}-->
+<div style="background:lightyellow;padding:8px;margin:4px;text-align:center;border:1px solid #F00;">
+<a href="http://www.csdn123.net/" target="_blank"><!--{$csdn123_arr["upgrade"]}--></a>
+</div>
+<!--{/if}-->
+<div style="margin:32px;"> 
+  
+  <!--{if $csdn123_arr["isok"]=='yes'}-->
+  
+  <div style="color:#F00;font-weight:bold;font-size:14px;margin-bottom:30px;"> {$csdn123_arr["info"]} <br><br></div>
+  <div> <strong>{lang csdn123_news:zd_version} v9.3</strong><br><br><br></div>
+  <div> <strong>{lang csdn123_news:zd_lastime} {lang csdn123_news:zd_ymd} </strong><br><br><br></div>
+  <div> {lang csdn123_news:help_information01} 235307918<br><br><br></div>
+  <div> {lang csdn123_news:help_information02} 155120699<br><br><br></div>
+  <div> {lang csdn123_news:help_information03} 155120699@qq.com<br><br><br></div>
+  <div> {lang csdn123_news:help_information04} <a href="http://www.csdn123.net/" target="_blank">http://www.csdn123.net/</a><br><br><br></div>
+  <div> {lang csdn123_news:help_information05} <a href="http://addon.discuz.com/?@csdn123_news.plugin" target="_blank">http://addon.discuz.com/?@csdn123_news.plugin</a><br><br><br></div>
+  <div><a href="?{$server_url}&repair=yes&formhash={FORMHASH}">If your plug-in shows garbled code, please click here to fix the plugin language pack!</a><br><br><br></div>
+  <div style="line-height:24px;margin-top:32px;font-weight:bold;width:80%;"><p>&nbsp;&nbsp;</p>{lang csdn123_news:important_note}</div>
+  
+  <!--{else}-->
+  
+  <div style="font-size:14px;line-height:18px;margin-bottom:30px;"> {$csdn123_arr["info"]} </div>	
+    
+  <!--{/if}--> 
+
+</div>
+
+
+
+  
+

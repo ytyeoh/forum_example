@@ -1,0 +1,113 @@
+<div class="container" id="cpcontainer">
+
+    <form name="cpform" method="post" action="?{$server_url}&search=yes'" id="cpform">
+        <input type="hidden" name="formhash" id="formhash" value="{FORMHASH}" />
+        <table class="tb tb2 ">
+            <tbody>
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:input_pages}</td>
+                </tr>
+                <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"><input name="page"  type="text" class="txt" value = "0"></td>
+               
+                      <td class="vtop tips2" s="1">
+
+                        <strong>{lang ftd_collect_bsbdj:tip}</strong>{lang ftd_collect_bsbdj:zero_represent_newst}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:forum_block}</td>
+                </tr>
+                <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"><select name="fid" id="fid" onChange="ajaxget('forum.php?mod=ajax&action=getthreadtypes&fid=' + this.value, 'threadtypes');">
+
+                            <!--{eval echo forumselect(FALSE, 0, 0, TRUE)}-->
+
+                        </select></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:theme_sort}</td>
+                </tr>
+                <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"><span id="threadtypes">
+                            <select name="threadtypeid">
+                                <option value="0"></option>
+                            </select>
+                        </span></td>
+
+                </tr>
+               
+           
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:input_uids}</td>
+                </tr>
+                <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"> <textarea rows="3" cols="20" form = "cpform" name="uidstr" ><!--{eval echo getUids()}--></textarea></td>
+                    <td class="vtop tips2" s="1">
+
+                        <strong>{lang ftd_collect_bsbdj:tip}</strong>{lang ftd_collect_bsbdj:uid_need_comma}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:content_check}</td>
+                </tr>
+                 <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"><ul onmouseover="altStyle(this);">
+                            <li class="checked">
+                                <input class="radio" type="radio" name="content_type" value="text" checked>
+                                &nbsp;{lang ftd_collect_bsbdj:text}</li>
+                            <li >
+                                <input class="radio" type="radio" name="content_type" value="pic" >
+                                &nbsp;{lang ftd_collect_bsbdj:image}</li>
+                        </ul></td>
+                    <td class="vtop tips2" s="1">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:random_collect}</td>
+                </tr>
+                <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"><ul onmouseover="altStyle(this);">
+                            <li >
+                                <input class="radio" type="radio" name="rndpage" value="1" >
+                                &nbsp;{lang ftd_collect_bsbdj:yes}</li>
+                            <li class="checked">
+                                <input class="radio" type="radio" name="rndpage" value="0"  checked>
+                                &nbsp;{lang ftd_collect_bsbdj:no}</li>
+                        </ul></td>
+                         <td class="vtop tips2" s="1">
+
+                        <strong>{lang ftd_collect_bsbdj:tip}</strong>{lang ftd_collect_bsbdj:if_yes_input_invalid}</td>
+                    <td class="vtop tips2" s="1">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td27" s="1">{lang ftd_collect_bsbdj:is_collect_reply}</td>
+                </tr>
+                  <tr class="noborder" onmouseover="setfaq(this, 'faqd3e6')">
+                    <td class="vtop rowform"><ul onmouseover="altStyle(this);">
+                            <li class="checked">
+                                <input class="radio" type="radio" name="reply" value="1" checked>
+                                &nbsp;{lang ftd_collect_bsbdj:yes}</li>
+                            <li >
+                                <input class="radio" type="radio" name="reply" value="0"  >
+                                &nbsp;{lang ftd_collect_bsbdj:no}</li>
+                        </ul></td>
+                         
+                </tr>
+                <tr>
+                    <td colspan="2"><div class="fixsel"><br/>
+                            <br/>
+                            <input type="submit" class="btn" id="submit_editsubmit" name="editsubmit" value=" {lang ftd_collect_bsbdj:start_collect} " onClick="this.value = '{lang ftd_collect_bsbdj:collecting}'">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</div>
+
+<script defer>
+    var hze_fid = document.getElementById('fid').value;
+    ajaxget('forum.php?mod=ajax&action=getthreadtypes&fid=' + hze_fid, 'threadtypes');
+</script>

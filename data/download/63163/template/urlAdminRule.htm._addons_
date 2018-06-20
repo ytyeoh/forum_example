@@ -1,0 +1,33 @@
+<table class="tb tb2 nobdb">
+	<tbody>
+		<tr>
+			<td colspan="4">
+			<div style="margin:8px 1px;">			
+				
+				<a href="?{$server_url}&export_rule=yes&formhash={FORMHASH}" class="addtr" style="background-position:-286px -150px">{lang csdn123_news:rule_export}</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="javascript:if(confirm('{lang csdn123_news:clears_all}')){window.location.href='?{$server_url}&clears_all_rule=yes&formhash={FORMHASH}';}" class="addtr" style="background-position-y:-286px">{lang csdn123_news:clears_all}</a>
+			
+			</div>
+			</td>
+		</tr>
+		<tr class="header">
+			<th>ID</th>
+			<th>{lang csdn123_news:rule_name}</th>
+			<th>{lang csdn123_news:rule_remark}</th>
+			<th>-</th>	
+		</tr>		
+		{loop $ruleRs $ruleItem}
+		<tr class="hover">
+			<td>{$ruleItem["ID"]}</td>
+			<td>{$ruleItem["rule_name"]}</td>
+			<td>{eval echo cutstr($ruleItem["rule_remark"],50) }</td>
+			<td>
+				<a href="?{$server_url}&rulemodify={$ruleItem['ID']}&formhash={FORMHASH}">{lang csdn123_news:modify}</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="?{$server_url}&ruledel={$ruleItem['ID']}&formhash={FORMHASH}">{lang csdn123_news:delete}</a>
+			</td>
+		</tr>
+		{/loop}		
+	</tbody>
+</table>

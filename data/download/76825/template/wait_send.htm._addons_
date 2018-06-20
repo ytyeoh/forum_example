@@ -1,0 +1,53 @@
+<form name="cpform" method="post" autocomplete="off" action="?{$server_url}&selall=yes" id="cpform">
+  <input type="hidden" name="formhash" id="formhash" value="{FORMHASH}" />
+  <input type="hidden" name="page" value="{$page}" />
+  <table class="tb tb2 nobdb">
+    <tbody>
+      <tr class="header">
+        <th>&nbsp;&nbsp;</th>
+        <th>{lang ftd_collect_bsbdj:original_link}</th>
+        <th>{lang ftd_collect_bsbdj:forum_block}</th>
+        <th>{lang ftd_collect_bsbdj:theme_sort}</th>
+        <th>{lang ftd_collect_bsbdj:is_collect_reply}</th>
+        <th>{lang ftd_collect_bsbdj:operate}</th>
+      </tr>
+    
+      <!--{loop $postRs $post}-->
+      
+      <tr class="hover">
+        <td><input type="checkbox" name="idarray[]" value="{$post['ID']}" /></td>
+        <td><a href="{eval echo dhtmlspecialchars($post['from_url'])}" target="_blank">{eval echo dhtmlspecialchars($post['subject'])}</a></td>
+        <td><!--{eval echo getFidName($post['fid'])}--></td>
+        <td><!--{eval echo getTypeidName($post['thread_type_id'],$post['fid'])}--></td>        
+        <td><!--{eval echo $post['reply'] == "1"?{lang ftd_collect_bsbdj:yes}:{lang ftd_collect_bsbdj:no}}--></td>
+        <td id="myid{$post['ID']}">
+        
+
+            <a href="?{$server_url}&import_id={$post['ID']}&page={$page}&formhash={FORMHASH}" onClick="importtobbs('myid{$post['ID']}')">{lang ftd_collect_bsbdj:import}</a>&nbsp;|&nbsp; 
+            <a href="?{$server_url}&del={$post['ID']}&page={$page}&formhash={FORMHASH}">{lang ftd_collect_bsbdj:delete}</a>
+            
+         </td>
+      </tr>
+      
+      <!--{/loop}-->
+      
+      <tr>
+        <td colspan="7"><div style="margin:8px 0;">
+            <input name="chkall" id="chkall" type="checkbox" class="checkbox" onclick="checkAll('prefix', this.form, 'idarray', 'chkall')" />
+            <label for="chkall">{lang ftd_collect_bsbdj:all_check}</label>
+            &nbsp;&nbsp;
+            <input type="submit" value="{lang ftd_collect_bsbdj:import}" name="selimport" class="btn" id="selimport" onClick="this.value='{lang ftd_collect_bsbdj:importing}'" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="{lang ftd_collect_bsbdj:delete}" name="seldelete" class="btn" />
+          </div></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pg" style="margin-top:16px;"> <a href="?{$prePage}&formhash={FORMHASH}">{lang ftd_collect_bsbdj:previous_page}</a> &nbsp;&nbsp;{$page}&nbsp;&nbsp; <a href="?{$nextPage}&formhash={FORMHASH}">{lang ftd_collect_bsbdj:next_page}</a> </div>
+</form>
+<script>
+function importtobbs(myid)
+{
+	document.getElementById(myid).innerHTML='<span style="color:red">{lang ftd_collect_bsbdj:importing}</span>';
+}
+</script>
