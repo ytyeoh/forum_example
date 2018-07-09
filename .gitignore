@@ -8,6 +8,7 @@
 /.bundle
 /vendor/bundle
 /path/ruby
+/config
 
 # Ignore all logfiles and tempfiles.
 /log/*
